@@ -1,0 +1,29 @@
+{
+  "name": "client",
+  "reason": {
+    "react-jsx": 3
+  },
+  "bsc-flags": ["-bs-super-errors"],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "namespace": true,
+  "bs-dependencies": [
+    
+  ],
+  "bs-dev-dependencies": [],
+  "ppx-flags": [
+    "bs-let/ppx"
+  ],
+  "refmt": 3
+}

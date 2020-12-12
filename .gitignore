@@ -1,0 +1,23 @@
+# common
+.DS_Store
+**/node_modules*
+logs/
+*.log
+../.idea
+.env
+
+# ocaml, reason
+**/lib/
+.bsb.lock
+.merlin
+*.bs.js
+
+tests/test.data
+
+# client
+.graphql_ppx_cache
+dist
+
+
+#ide
+.idea
