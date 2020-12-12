@@ -6,12 +6,12 @@ let sortedInput = input->Belt.SortArray.stableSortBy((a, b) => a - b)
 let arrays = input->Array.map(item => input->Array.partition(x => x + item == 2020))
 
 let sums = arrays->Array.keep(x => {
-  let (a, b) = x
+  let (a, _) = x
   a->Array.length > 0
 })
 
 let r = sums->Array.map(x => {
-  let (a, b) = x
+  let (a, _) = x
   switch a->Array.length > 0 {
   | true => a->Array.getExn(0)
   | false => 0
@@ -27,7 +27,7 @@ let part2_arrays = offsets->Array.map(x => {
 })
 
 let filtered = part2_arrays->Array.map(x => x->Array.keep(y => {
-    let (a, b) = y
+    let (a, _) = y
     a->Array.length > 0
   }))
 
